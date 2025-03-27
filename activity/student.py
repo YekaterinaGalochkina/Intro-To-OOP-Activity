@@ -6,13 +6,20 @@ class Student:
         self.classes = classes
     def add_class(self, new_class):
         self.classes.append(new_class)
+        return self.classes
     
     def get_num_classes(self):
         return len(self.classes)
     
     def summary(self):
-        return f"{self.name} is a {self.grade_level} enrolled in {self.get_num_classes} classes"
+        return f"{self.name} is a {self.grade_level} enrolled in {self.get_num_classes()} classes"
     
 samara = Student("Samara", "junior", [ "Pre-Calc", "English III", "World History", "Gym", "Chemistry", "Music Composition" ])
 
+
+print(samara.add_class("Painting"))
 print(samara.get_num_classes())
+print(samara.summary())
+
+
+
