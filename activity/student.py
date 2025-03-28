@@ -1,4 +1,3 @@
-# add your Student class here!
 class Student:
     def __init__(self, name, grade_level, classes):
         self.name = name 
@@ -13,13 +12,15 @@ class Student:
     
     def summary(self):
         return f"{self.name} is a {self.grade_level} enrolled in {self.get_num_classes()} classes"
-    
+
+# First instance
 samara = Student("Samara", "junior", [ "Pre-Calc", "English III", "World History", "Gym", "Chemistry", "Music Composition" ])
+samara.add_class("Painting") 
+samara.get_num_classes()
+samara.summary() 
 
-
-print(samara.add_class("Painting"))
-print(samara.get_num_classes())
-print(samara.summary())
-
-
-
+# Second instance
+claire = Student("Claire", "freshman",[ "Algebra", "Writing", "Contemporary World Issues", "Gym", "Earth Science" ])
+claire.add_class("Painting")
+claire.get_num_classes() 
+claire.summary()
