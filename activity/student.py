@@ -14,13 +14,13 @@ class Student:
         return f"{self.name} is a {self.grade_level} enrolled in {self.get_num_classes()} classes"
 
 # First instance
-samara = Student("Samara", "junior", [ "Pre-Calc", "English III", "World History", "Gym", "Chemistry", "Music Composition" ])
-samara.add_class("Painting") 
-samara.get_num_classes()
-samara.summary() 
+student_1 = Student("Samara", "junior", [ "Pre-Calc", "English III", "World History", "Gym", "Chemistry", "Music Composition" ])
+student_1.add_class("Painting") 
+student_1.get_num_classes()
+student_1.summary() 
 
 # Second instance
-claire = Student("Claire", "freshman",[ "Algebra", "Writing", "Contemporary World Issues", "Gym", "Earth Science" ])
-claire.add_class("Painting")
-claire.get_num_classes() 
-claire.summary()
+student_2 = Student("Claire", "freshman",[ "Algebra", "Writing", "Contemporary World Issues", "Gym", "Earth Science" ])
+student_2.add_class("Painting")
+student_2.get_num_classes() 
+student_2.summary()
